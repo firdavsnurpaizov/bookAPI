@@ -1,0 +1,42 @@
+@import "../styles/slider.scss";
+@import "../styles/books.scss";
+
+// @font-face {
+//   font-family: "Roboto";
+//   src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+//   font-weight: 400;
+// }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000;
+}
+
+.btn {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
