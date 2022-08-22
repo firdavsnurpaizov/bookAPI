@@ -1,16 +1,7 @@
-
-// const baseURL = {
-//     baseURL: 'http://localhost:5000',
-//     header: {
-//         accept: 'application/json',
-//         'Content-Type': 'application/json'
-//     }
-// }
-
-
+const baseURL = 'http://localhost:5000'
 
 export async function signin(data) {
-    return fetch('http://localhost:5000/signin', {
+    return fetch(baseURL + '/signin', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -21,7 +12,7 @@ export async function signin(data) {
 }
 
 export function login(data) {
-    return fetch('http://localhost:5000/login', {
+    return fetch(baseURL + '/login', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -34,7 +25,7 @@ export function login(data) {
 
 export async function authMe() {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch('http://localhost:5000/me', {
+    return fetch(baseURL + '/me', {
         method: 'GET',
         headers: {
             'X-Auth': token
@@ -44,7 +35,7 @@ export async function authMe() {
 
 export async function getBooksFromAPI() {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch('http://localhost:5000/books', {
+    return fetch(baseURL + '/books', {
         method: 'GET',
         headers: {
             'X-Auth': token
@@ -54,7 +45,7 @@ export async function getBooksFromAPI() {
 
 export async function deleteBookFromAPI(id) {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch(`http://localhost:5000/books/delete/${id}`, {
+    return fetch(baseURL + `/books/delete/${id}`, {
         method: 'DELETE',
         headers: {
             'X-Auth': token
@@ -64,7 +55,7 @@ export async function deleteBookFromAPI(id) {
 
 export async function createBook(data) {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch('http://localhost:5000/books/create', {
+    return fetch(baseURL + '/books/create', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -77,7 +68,7 @@ export async function createBook(data) {
 
 export async function getBooksItemFromAPI(id) {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch(`http://localhost:5000/books/${id}`, {
+    return fetch(baseURL + `/books/${id}`, {
         method: 'GET',
         headers: {
             'X-Auth': token
@@ -87,7 +78,7 @@ export async function getBooksItemFromAPI(id) {
 
 export async function updateBook(id, data) {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch(`http://localhost:5000/books/update/${id}`, {
+    return fetch(baseURL + `/books/update/${id}`, {
         method: 'PUT',
         body: JSON.stringify(data),
         headers: {
@@ -100,7 +91,7 @@ export async function updateBook(id, data) {
 
 export async function isFav(id, data) {
     const token = JSON.parse(localStorage.getItem('token'))
-    return fetch(`http://localhost:5000/books/update/${id}`, {
+    return fetch(baseURL + `/books/update/${id}`, {
         method: 'PUT',
         body: JSON.stringify(data),
         headers: {

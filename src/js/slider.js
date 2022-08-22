@@ -10,19 +10,14 @@ const slidesCount = mainSlide?.querySelectorAll('div').length
 if (document.querySelector('#main')) {
 
     let activeSlideIndex = 0;
-    // signupBtn.style.color = "red"
     sidebar.style.top = `-${(slidesCount - 1) * 100}vh`
 
     upBtn.addEventListener('click', () => {
         changeSlide('up')
-        // signupBtn.style.color = "red"
-        // loginBtn.style.color = "#ccc"
     })
 
     downBtn.addEventListener('click', () => {
         changeSlide('down')
-        // loginBtn.style.color = "blue"
-        // signupBtn.style.color = "#ccc"
     })
 
     document.addEventListener('keydown', event => {

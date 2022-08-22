@@ -35,7 +35,6 @@ if (document.querySelector('#main')) {
                     localStorage.setItem('token', JSON.stringify(data.token))
                     location.assign('../books.html')
                 } else if (response.status === 403) {
-                    
                     console.log('Неверный логин или пароль');
                 } else if (response.status === 400) {
                     console.log("error")

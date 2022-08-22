@@ -64,7 +64,7 @@
                 type="text"
                 placeholder="Введите название"
               />
-              <p class="modal-item__warning  warning-title">Заполните поле*</p>
+              <p class="modal-item__warning warning-title">Заполните поле*</p>
             </span>
             <span class="modal-item__wrapper">
               <input
@@ -104,7 +104,9 @@
                 type="text"
                 placeholder="Введите язык оригинал"
               />
-              <p class="modal-item__warning warning-language">Заполните поле*</p>
+              <p class="modal-item__warning warning-language">
+                Заполните поле*
+              </p>
             </span>
             <label>
               <input class="genres" type="checkbox" value="Фэнтези" />
@@ -145,36 +147,54 @@
           </div>
           <h3>Введите новые данные</h3>
           <form class="update-form">
-            <input
-              class="update-title update-item"
-              type="text"
-              placeholder="Введите название"
-            />
-            <input
-              class="update-author update-item"
-              type="text"
-              placeholder="Введите автора"
-            />
-            <input
-              class="update-year update-item"
-              type="number"
-              placeholder="Введите год публикации"
-            />
-            <input
-              class="update-house update-item"
-              type="text"
-              placeholder="Введите издательство"
-            />
-            <input
-              class="update-pages update-item"
-              type="number"
-              placeholder="Введите кол-во страниц"
-            />
-            <input
-              class="update-language update-item"
-              type="text"
-              placeholder="Введите язык оригинал"
-            />
+            <span class="update-item__wrapper">
+              <input
+                class="update-title update-item"
+                type="text"
+                placeholder="Введите название"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
+            <span class="update-item__wrapper">
+              <input
+                class="update-author update-item"
+                type="text"
+                placeholder="Введите автора"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
+            <span class="update-item__wrapper">
+              <input
+                class="update-year update-item"
+                type="number"
+                placeholder="Введите год публикации"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
+            <span class="update-item__wrapper">
+              <input
+                class="update-house update-item"
+                type="text"
+                placeholder="Введите издательство"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
+            <span class="update-item__wrapper">
+              <input
+                class="update-pages update-item"
+                type="number"
+                placeholder="Введите кол-во страниц"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
+            <span class="update-item__wrapper">
+              <input
+                class="update-language update-item"
+                type="text"
+                placeholder="Введите язык оригинал"
+              />
+              <p class="update-item__warning">Заполните поле*</p>
+            </span>
             <label>
               <input class="genresUpdate" type="checkbox" value="Фэнтези" />
               Фантастика
@@ -189,6 +209,31 @@
             </label>
             <button class="btn update-add">Редактировать</button>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="detail-body">
+        <div class="detail-content">
+          <div class="detail-close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.674 12L3.83698 18.837L5.16297 20.163L12 13.326L18.837 20.163L20.163 18.837L13.326 12L20.163 5.16297L18.837 3.83698L12 10.674L5.16297 3.83698L3.83698 5.16297L10.674 12Z"
+                fill="#222222"
+              />
+            </svg>
+          </div>
+          <h3>Детальная информация о книге</h3>
+          <div class="detail-wrapper"></div>
         </div>
       </div>
     </div>

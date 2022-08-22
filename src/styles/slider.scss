@@ -52,6 +52,7 @@
   justify-content: center;
   color: #fff;
 }
+
 .controls {
   button {
     padding: 10px;
@@ -67,11 +68,9 @@
       color: #aaa;
     }
   }
-
   button:hover {
     color: #222;
   }
-
   button:focus {
     outline: none;
   }
@@ -134,13 +133,11 @@
       color: #ccc;
     }
   }
-
   &-age::-webkit-outer-spin-button,
   &-age::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-
   &-submit {
     font-family: "Roboto";
     font-style: normal;
