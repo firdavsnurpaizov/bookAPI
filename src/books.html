@@ -58,36 +58,54 @@
           </div>
           <h3>Введите данные</h3>
           <form class="modal-form">
-            <input
-              class="new-title modal-item"
-              type="text"
-              placeholder="Введите название"
-            />
-            <input
-              class="new-author modal-item"
-              type="text"
-              placeholder="Введите автора"
-            />
-            <input
-              class="new-year modal-item"
-              type="number"
-              placeholder="Введите год публикации"
-            />
-            <input
-              class="new-house modal-item"
-              type="text"
-              placeholder="Введите издательство"
-            />
-            <input
-              class="new-pages modal-item"
-              type="number"
-              placeholder="Введите кол-во страниц"
-            />
-            <input
-              class="new-language modal-item"
-              type="text"
-              placeholder="Введите язык оригинал"
-            />
+            <span class="modal-item__wrapper">
+              <input
+                class="new-title modal-item"
+                type="text"
+                placeholder="Введите название"
+              />
+              <p class="modal-item__warning  warning-title">Заполните поле*</p>
+            </span>
+            <span class="modal-item__wrapper">
+              <input
+                class="new-author modal-item"
+                type="text"
+                placeholder="Введите автора"
+              />
+              <p class="modal-item__warning warning-author">Заполните поле*</p>
+            </span>
+            <span class="modal-item__wrapper">
+              <input
+                class="new-year modal-item"
+                type="number"
+                placeholder="Введите год публикации"
+              />
+              <p class="modal-item__warning warning-year">Заполните поле*</p>
+            </span>
+            <span class="modal-item__wrapper">
+              <input
+                class="new-house modal-item"
+                type="text"
+                placeholder="Введите издательство"
+              />
+              <p class="modal-item__warning warning-house">Заполните поле*</p>
+            </span>
+            <span class="modal-item__wrapper">
+              <input
+                class="new-pages modal-item"
+                type="number"
+                placeholder="Введите кол-во страниц"
+              />
+              <p class="modal-item__warning warning-pages">Заполните поле*</p>
+            </span>
+            <span class="modal-item__wrapper">
+              <input
+                class="new-language modal-item"
+                type="text"
+                placeholder="Введите язык оригинал"
+              />
+              <p class="modal-item__warning warning-language">Заполните поле*</p>
+            </span>
             <label>
               <input class="genres" type="checkbox" value="Фэнтези" />
               Фантастика
@@ -100,7 +118,7 @@
               <input class="genres" type="checkbox" value="Роман" />
               Роман
             </label>
-            <button class="btn modal-add">Добавить</button>
+            <button class="modal-add btn">Добавить</button>
           </form>
         </div>
       </div>

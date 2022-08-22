@@ -136,7 +136,7 @@
     margin: 50px;
   }
   &-content {
-    padding: 50px 30px 30px 30px;
+    padding: 50px 25px 30px 25px;
     background: #ffffff;
     border-radius: 4px;
     display: flex;
@@ -151,7 +151,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
   }
   &-close {
     position: absolute;
@@ -167,9 +167,24 @@
 
   &-item {
     padding: 12px;
-    width: 300px;
+    width: 250px;
     height: 46px;
+
+    &__warning {
+      font-family: "Roboto";
+      font-style: normal;
+      font-size: 14px;
+      line-height: 16px;
+  
+      text-align: start;
+      color: #f90707;
+      padding-left: 12px;
+      margin-top: 4px;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
+
   &-item::placeholder {
     font-family: "Roboto";
     font-style: normal;
@@ -178,7 +193,7 @@
     color: #ccc;
   }
 
-  &-btn {
+  &-add {
     font-family: "Roboto";
     font-style: normal;
     font-size: 16px;
@@ -186,14 +201,15 @@
     text-align: center;
     color: #fff;
     background-color: #925837;
+    width: 250px !important;
   }
 }
 
-@media screen and (max-width:580px) {
-    .header {
-      flex-direction: column;
-      gap: 20px;
-    }
+@media screen and (max-width: 580px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .update {
@@ -215,7 +231,7 @@
     margin: 50px;
   }
   &-content {
-    padding: 50px 30px 30px 30px;
+    padding: 50px 25px 30px 25px;
     background: #ffffff;
     border-radius: 4px;
     display: flex;
@@ -247,7 +263,7 @@
 
   &-item {
     padding: 12px;
-    width: 300px;
+    width: 250px;
     height: 46px;
   }
   &-item::placeholder {
@@ -266,5 +282,6 @@
     text-align: center;
     color: #fff;
     background-color: #925837;
+    width: 250px !important;
   }
 }
